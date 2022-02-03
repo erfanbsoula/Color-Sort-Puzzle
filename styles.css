@@ -1,0 +1,62 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: block;
+}
+
+br { margin-bottom: 5px; }
+.left-space { margin-left: 20px; }
+.field-space{ margin-right: 8px; }
+.submit-result { color: red; }
+.result { color: green; }
+
+.btn {
+    color: black;
+    border-style: solid;
+    border-width: 1;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: silver;
+    cursor: pointer;
+}
+
+.color-preview {
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottle {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px 20px 30px;
+    width: 45px;
+    height: 140px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-top: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.portion {
+    margin: 0;
+    height: 25%;
+    width: 100%;
+}

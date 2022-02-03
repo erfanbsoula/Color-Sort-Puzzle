@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solver</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="row">
+        <span  class="field-space">Enter Bottle Count:</span>
+        <input type="number" min="2" max="20" value="6" id="bottle-count" style="width: 80px;">
+        <input type="button" class="btn left-space" value="create" id="submit1">
+        <span id="submit1-result" class="left-space submit-result"></span>
+    </div>
+    <br>
+    <div class="row"">
+        <span class="field-space">Select a Bottle:</span>
+        <input type="number" min="1" max="20" value="1" id="bottle-select" style="width: 60px;">
+        <span class="left-space field-space">Portion:</span>
+        <select name="choice" id="portion-select">
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1" selected>1</option>
+        </select>
+        <span class="left-space field-space">Color:</span>
+        <select name="choice" id="portion-color" class="field-space">
+            <option value="1" selected>green</option>
+            <option value="2">blue</option>
+            <option value="3">red</option>
+            <option value="4">yellow</option>
+            <option value="5">brown</option>
+            <option value="6">grey</option>
+            <option value="7">orange</option>
+            <option value="8">cyan</option>
+            <option value="9">magenta</option>
+            <option value="10">purple</option>
+            <option value="11">olive</option>
+            <option value="12">teal</option>
+        </select>
+        <div id="color-preview" class="color-preview"></div>
+        <input type="button" class="btn left-space" value="submit" id="submit2">
+        <span id="submit2-result" class="left-space submit-result"></span>
+    </div>
+    <br><br>
+    <div id="row1" class="row" style="justify-content: center;"></div>
+    <div id="row2" class="row" style="justify-content: center;"></div>
+    <br>
+    <div class="row" id="process-field" style="visibility: hidden;">
+        <span class="left-space field-space">Try to Solve:</span>
+        <input type="button" class="btn" value="process" id="submit3">
+        <span id="submit3-result" class="left-space"></span>
+    </div>
+    <p class="left-space result" id="result"></p>
+</body>
+<script src="solve.js"></script>
+<script src="script.js"></script>
+</html>
